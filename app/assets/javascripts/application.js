@@ -1,8 +1,7 @@
 //= require rails-ujs
-//= require turbolinks
 //= require_tree .
 $(document).ready(function() {
-    Highcharts.chart('volumeYTD', {
+    new Highcharts.chart('volumeYTD', {
         title: {
             text: 'Sell Out Volume YTD'
         },
@@ -61,7 +60,7 @@ $(document).ready(function() {
         }]
     });
 
-    Highcharts.chart('volumeMTD', {
+    new Highcharts.chart('volumeMTD', {
         title: {
             text: 'Sell Out Volume MTD'
         },
@@ -97,7 +96,7 @@ $(document).ready(function() {
         }]
     });
 
-    Highcharts.chart('universe', {
+    new Highcharts.chart('universe', {
         title: {
             text: 'Universe'
         },
@@ -132,7 +131,7 @@ $(document).ready(function() {
         }]
     });
 
-    Highcharts.chart('YTDVisit', {
+    new Highcharts.chart('YTDVisit', {
         chart: {
             zoomType: 'xy'
         },
@@ -207,7 +206,7 @@ $(document).ready(function() {
         ]
     });
 
-    Highcharts.chart('YTDStrike', {
+    new Highcharts.chart('YTDStrike', {
         title: {
             text: 'YTD Strike Rate'
         },
@@ -266,7 +265,7 @@ $(document).ready(function() {
         }]
     });
 
-    Highcharts.chart('coverage', {
+    new Highcharts.chart('coverage', {
         title: {
             text: 'Coverage'
         },
@@ -320,7 +319,7 @@ $(document).ready(function() {
         }]
     });
 
-    Highcharts.chart('transaction', {
+    new Highcharts.chart('transaction', {
         title: {
             text: 'Transaction'
         },
