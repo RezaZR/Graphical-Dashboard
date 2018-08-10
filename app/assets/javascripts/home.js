@@ -1,4 +1,4 @@
-document.addEventListener("turbolinks:load", function() {
+$(document).ready(function() {
     Highcharts.chart('volumeYTD', {
         title: {
             text: 'Sell Out Volume YTD'
