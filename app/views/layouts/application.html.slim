@@ -18,7 +18,8 @@ html
     meta content="yes" name="apple-touch-fullscreen" /
     meta name="apple-mobile-web-app-status-bar-style" content="black" /
     link rel="shortcut icon" href="images/logo-main.png" sizes=("16x16 24x24 32x32 48x48 64x64") /
-    = stylesheet_link_tag "application", media: "all"
+    meta name="turbolinks-visit-control" content="reload"
+    = stylesheet_link_tag "application", media: "all", 'data-turbolinks-track': 'reload'
     
     = javascript_include_tag src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
     = javascript_include_tag src="https://code.highcharts.com/highcharts.js"
@@ -27,7 +28,7 @@ html
     = javascript_include_tag src="https://code.highcharts.com/modules/export-data.js"
     = javascript_include_tag src="https://code.highcharts.com/highcharts-more.js"
     = javascript_include_tag src="https://code.highcharts.com/modules/solid-gauge.js"
-    = javascript_include_tag src="application.js"
+    = javascript_include_tag "application", 'data-turbolinks-track': 'reload'
 
   body
     = yield
