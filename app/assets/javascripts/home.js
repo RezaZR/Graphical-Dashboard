@@ -461,36 +461,3 @@ var chartRpm = Highcharts.chart('today-2', Highcharts.merge(gaugeOptions, {
     }]
 
 }));
-
-// Bring life to the dials
-setInterval(function() {
-    // Speed
-    var point,
-        newVal,
-        inc;
-
-    if (chartSpeed) {
-        point = chartSpeed.series[0].points[0];
-        inc = Math.round((Math.random() - 0.5) * 100);
-        newVal = point.y + inc;
-
-        if (newVal < 0 || newVal > 200) {
-            newVal = point.y - inc;
-        }
-
-        point.update(newVal);
-    }
-
-    // RPM
-    if (chartRpm) {
-        point = chartRpm.series[0].points[0];
-        inc = Math.random() - 0.5;
-        newVal = point.y + inc;
-
-        if (newVal < 0 || newVal > 5) {
-            newVal = point.y - inc;
-        }
-
-        point.update(newVal);
-    }
-}, 2000);
