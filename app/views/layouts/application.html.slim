@@ -21,7 +21,7 @@ html
     meta name="turbolinks-visit-control" content="reload"
     = stylesheet_link_tag "application", media: "all", 'data-turbolinks-track': 'reload'
     
-    = javascript_include_tag src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    / = javascript_include_tag src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
     = javascript_include_tag src="https://code.highcharts.com/highcharts.js"
     = javascript_include_tag src="https://code.highcharts.com/modules/series-label.js"
     = javascript_include_tag src="https://code.highcharts.com/modules/exporting.js"
@@ -32,4 +32,4 @@ html
   body class=("#{controller_name} #{action_name}")
     = yield
 
-    = javascript_include_tag params[:controller]
+    = javascript_include_tag "home"
