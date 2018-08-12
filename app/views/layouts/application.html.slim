@@ -29,7 +29,7 @@ html
     = javascript_include_tag src="https://code.highcharts.com/highcharts-more.js"
     = javascript_include_tag src="https://code.highcharts.com/modules/solid-gauge.js"
 
-  body
+  body class=("#{controller_name} #{action_name}")
     = yield
 
-    = javascript_include_tag :application
+    = javascript_include_tag params[:controller]
