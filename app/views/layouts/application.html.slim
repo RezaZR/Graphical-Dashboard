@@ -19,15 +19,15 @@ html
     meta name="apple-mobile-web-app-status-bar-style" content="black" /
     / link rel="shortcut icon" href="images/logo-main.png" sizes=("16x16 24x24 32x32 48x48 64x64") /
     meta name="turbolinks-visit-control" content="reload"
-    = stylesheet_link_tag "application", media: "all", 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag "application", media: "all"
     
     = javascript_include_tag src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
-    = javascript_include_tag src="https://code.highcharts.com/highcharts.js"
-    = javascript_include_tag src="https://code.highcharts.com/modules/series-label.js"
-    = javascript_include_tag src="https://code.highcharts.com/modules/exporting.js"
-    = javascript_include_tag src="https://code.highcharts.com/modules/export-data.js"
-    = javascript_include_tag src="https://code.highcharts.com/highcharts-more.js"
-    = javascript_include_tag src="https://code.highcharts.com/modules/solid-gauge.js"
+    = javascript_include_tag "highcharts/highcharts.js"
+    = javascript_include_tag "highcharts/modules/series-label.js"
+    = javascript_include_tag "highcharts/modules/exporting.js"
+    = javascript_include_tag "highcharts/modules/export-data.js"
+    = javascript_include_tag "highcharts/highcharts-more.js"
+    = javascript_include_tag "highcharts/modules/solid-gauge.js"
     = javascript_include_tag "home"
 
   body
