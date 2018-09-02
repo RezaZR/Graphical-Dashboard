@@ -12,10 +12,4 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
-Rails.application.config.assets.precompile += %w( highcharts/highcharts.js )
-Rails.application.config.assets.precompile += %w( highcharts/modules/series-label.js )
-Rails.application.config.assets.precompile += %w( highcharts/modules/exporting.js )
-Rails.application.config.assets.precompile += %w( highcharts/modules/export-data.js )
-Rails.application.config.assets.precompile += %w( highcharts/highcharts-more.js )
-Rails.application.config.assets.precompile += %w( highcharts/modules/solid-gauge.js )
-Rails.application.config.assets.precompile += %w( home.js )
+Rails.application.config.assets.precompile += %w( *.js )
